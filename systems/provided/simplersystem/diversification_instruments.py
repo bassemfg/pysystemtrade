@@ -26,6 +26,9 @@ import numpy as np
 import pandas as pd
 import random
 from random import getrandbits
+import matplotlib
+
+
 import matplotlib.pylab as plt
 
 def simple_mav(price, short=10, long=40, forecast_fixed=10):

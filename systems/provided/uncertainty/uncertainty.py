@@ -445,6 +445,9 @@ for this_idx_of_weights, the_result in zip(idx_of_poss_weights, results):
     # we can only do this as weights add up to 1, so 2x2 array works
     results_as_matrix[this_idx_of_weights[0]][this_idx_of_weights[1]] = the_result
 
+import matplotlib
+
+
 import matplotlib.pyplot as plt
 plt.contourf(results_as_matrix)
 plt.colorbar()

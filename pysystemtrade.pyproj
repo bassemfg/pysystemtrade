@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8efaa22a-77a8-424f-b970-60d61f60ae62}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>examples\introduction\asimpletradingrule.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>CondaEnv|CondaEnv|Anaconda3_64</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="pytest.ini" />
+    <Content Include="requirements.txt" />
+    <Content Include="tox.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="data\__init__.py" />
+    <Compile Include="examples\introduction\asimpletradingrule.py" />
+    <Compile Include="examples\introduction\prebakedsystems.py" />
+    <Compile Include="examples\introduction\simplesystem.py" />
+    <Compile Include="examples\temp.py" />
+    <Compile Include="examples\__init__.py" />
+    <Compile Include="private\__init__.py" />
+    <Compile Include="setup.py" />
+    <Compile Include="sysbrokers\baseClient.py" />
+    <Compile Include="sysbrokers\baseServer.py" />
+    <Compile Include="sysbrokers\IB\ibClient.py" />
+    <Compile Include="sysbrokers\IB\ibConnection.py" />
+    <Compile Include="sysbrokers\IB\ibServer.py" />
+    <Compile Include="sysbrokers\IB\ibSpotFXData.py" />
+    <Compile Include="sysbrokers\IB\__init__.py" />
+    <Compile Include="sysbrokers\__init__.py" />
+    <Compile Include="syscore\accounting.py" />
+    <Compile Include="syscore\algos.py" />
+    <Compile Include="syscore\capital.py" />
+    <Compile Include="syscore\correlations.py" />
+    <Compile Include="syscore\dateutils.py" />
+    <Compile Include="syscore\divmultipliers.py" />
+    <Compile Include="syscore\fileutils.py" />
+    <Compile Include="syscore\genutils.py" />
+    <Compile Include="syscore\handcrafting.py" />
+    <Compile Include="syscore\objects.py" />
+    <Compile Include="syscore\optimisation.py" />
+    <Compile Include="syscore\pdutils.py" />
+    <Compile Include="syscore\tests\test.py" />
+    <Compile Include="syscore\tests\test_Accounting.py" />
+    <Compile Include="syscore\tests\test_algos.py" />
+    <Compile Include="syscore\tests\test_correlation.py" />
+    <Compile Include="syscore\tests\test_dateutils.py" />
+    <Compile Include="syscore\tests\test_pdutils.py" />
+    <Compile Include="syscore\yaml.py" />
+    <Compile Include="syscore\__init__.py" />
+    <Compile Include="sysdata\arctic\arctic_adjusted_prices.py" />
+    <Compile Include="sysdata\arctic\arctic_and_mongo_sim_futures_data.py" />
+    <Compile Include="sysdata\arctic\arctic_connection.py" />
+    <Compile Include="sysdata\arctic\arctic_futures_per_contract_prices.py" />
+    <Compile Include="sysdata\arctic\arctic_multiple_prices.py" />
+    <Compile Include="sysdata\arctic\arctic_spotfx_prices.py" />
+    <Compile Include="sysdata\arctic\__init__.py" />
+    <Compile Include="sysdata\configdata.py" />
+    <Compile Include="sysdata\csv\csv_adjusted_prices.py" />
+    <Compile Include="sysdata\csv\csv_instrument_config.py" />
+    <Compile Include="sysdata\csv\csv_multiple_prices.py" />
+    <Compile Include="sysdata\csv\csv_roll_calendars.py" />
+    <Compile Include="sysdata\csv\csv_sim_futures_data.py" />
+    <Compile Include="sysdata\csv\csv_spot_fx.py" />
+    <Compile Include="sysdata\csv\__init__.py" />
+    <Compile Include="sysdata\data.py" />
+    <Compile Include="sysdata\futures\adjusted_prices.py" />
+    <Compile Include="sysdata\futures\contracts.py" />
+    <Compile Include="sysdata\futures\contract_dates_and_expiries.py" />
+    <Compile Include="sysdata\futures\futuresDataForSim.py" />
+    <Compile Include="sysdata\futures\futures_per_contract_prices.py" />
+    <Compile Include="sysdata\futures\instruments.py" />
+    <Compile Include="sysdata\futures\multiple_prices.py" />
+    <Compile Include="sysdata\futures\rolls.py" />
+    <Compile Include="sysdata\futures\roll_calendars.py" />
+    <Compile Include="sysdata\futures\__init__.py" />
+    <Compile Include="sysdata\fx\spotfx.py" />
+    <Compile Include="sysdata\mongodb\mongo_connection.py" />
+    <Compile Include="sysdata\mongodb\mongo_futures_contracts.py" />
+    <Compile Include="sysdata\mongodb\mongo_futures_instruments.py" />
+    <Compile Include="sysdata\mongodb\mongo_roll_data.py" />
+    <Compile Include="sysdata\mongodb\__init__.py" />
+    <Compile Include="sysdata\quandl\quandl_futures.py" />
+    <Compile Include="sysdata\quandl\quandl_spotfx_prices.py" />
+    <Compile Include="sysdata\quandl\quandl_utils.py" />
+    <Compile Include="sysdata\quandl\__init__.py" />
+    <Compile Include="sysdata\randomdata.py" />
+    <Compile Include="sysdata\tests\test_arctic_futures.py" />
+    <Compile Include="sysdata\tests\test_futuresobjects.py" />
+    <Compile Include="sysdata\tests\test_mongoFutures.py" />
+    <Compile Include="sysdata\tests\test_quandlprices.py" />
+    <Compile Include="sysdata\tests\__init__.py" />
+    <Compile Include="sysdata\__init__.py" />
+    <Compile Include="sysinit\configtools\csvweights_to_yaml.py" />
+    <Compile Include="sysinit\futures\adjustedprices_from_mongo_multiple_to_mongo.py" />
+    <Compile Include="sysinit\futures\csv_data_readers\rolldata_from_csv.py" />
+    <Compile Include="sysinit\futures\historical_contract_prices_quandl_mongo.py" />
+    <Compile Include="sysinit\futures\instruments_csv_mongo.py" />
+    <Compile Include="sysinit\futures\multipleprices_from_arcticprices_and_csv_calendars_to_arctic.py" />
+    <Compile Include="sysinit\futures\repocsv_adjusted_prices.py" />
+    <Compile Include="sysinit\futures\repocsv_instrument_config.py" />
+    <Compile Include="sysinit\futures\repocsv_multiple_prices.py" />
+    <Compile Include="sysinit\futures\repocsv_spotfx_prices.py" />
+    <Compile Include="sysinit\futures\rollcalendars_from_arcticprices_to_csv.py" />
+    <Compile Include="sysinit\futures\rollcalendars_from_providedcsv_prices.py" />
+    <Compile Include="sysinit\futures\roll_parameters_csv_mongo.py" />
+    <Compile Include="sysinit\futures\spotfx_from_quandl_to_arctic_and_csv.py" />
+    <Compile Include="sysinit\futures\__init__.py" />
+    <Compile Include="sysinit\__init__.py" />
+    <Compile Include="syslogdiag\log.py" />
+    <Compile Include="syslogdiag\__init__.py" />
+    <Compile Include="sysprices\futures\__init__.py" />
+    <Compile Include="sysprices\provided\__init__.py" />
+    <Compile Include="sysprices\__init__.py" />
+    <Compile Include="syssims\__init__.py" />
+    <Compile Include="systems\account.py" />
+    <Compile Include="systems\accounts_inputs.py" />
+    <Compile Include="systems\basesystem.py" />
+    <Compile Include="systems\defaults.py" />
+    <Compile Include="systems\forecasting.py" />
+    <Compile Include="systems\forecast_combine.py" />
+    <Compile Include="systems\forecast_scale_cap.py" />
+    <Compile Include="systems\futures\rawdata.py" />
+    <Compile Include="systems\futures\__init__.py" />
+    <Compile Include="systems\output_system.py" />
+    <Compile Include="systems\portfolio.py" />
+    <Compile Include="systems\positionsizing.py" />
+    <Compile Include="systems\provided\example\rules.py" />
+    <Compile Include="systems\provided\example\simplesystem.py" />
+    <Compile Include="systems\provided\example\__init__.py" />
+    <Compile Include="systems\provided\futures_chapter15\basesystem.py" />
+    <Compile Include="systems\provided\futures_chapter15\estimatedsystem.py" />
+    <Compile Include="systems\provided\futures_chapter15\rules.py" />
+    <Compile Include="systems\provided\futures_chapter15\__init__.py" />
+    <Compile Include="systems\provided\moretradingrules\morerules.py" />
+    <Compile Include="systems\provided\moretradingrules\temp.py" />
+    <Compile Include="systems\provided\moretradingrules\__init__.py" />
+    <Compile Include="systems\provided\simplersystem\atrvsvol.py" />
+    <Compile Include="systems\provided\simplersystem\diversification_instruments.py" />
+    <Compile Include="systems\provided\simplersystem\multiple_rules.py" />
+    <Compile Include="systems\provided\simplersystem\nonbinary.py" />
+    <Compile Include="systems\provided\simplersystem\nostoploss.py" />
+    <Compile Include="systems\provided\simplersystem\startersystem.py" />
+    <Compile Include="systems\provided\uncertainty\handcrafting_test_implementation.py" />
+    <Compile Include="systems\provided\uncertainty\uncertainty.py" />
+    <Compile Include="systems\provided\__init__.py" />
+    <Compile Include="systems\rawdata.py" />
+    <Compile Include="systems\stage.py" />
+    <Compile Include="systems\system_cache.py" />
+    <Compile Include="systems\tests\testdata.py" />
+    <Compile Include="systems\tests\testfuturesrawdata.py" />
+    <Compile Include="systems\tests\test_base_systems.py" />
+    <Compile Include="systems\tests\test_cache.py" />
+    <Compile Include="systems\tests\test_forecasts.py" />
+    <Compile Include="systems\tests\test_forecast_combine.py" />
+    <Compile Include="systems\tests\test_forecast_scale_cap.py" />
+    <Compile Include="systems\tests\test_portfolio.py" />
+    <Compile Include="systems\tests\test_position_sizing.py" />
+    <Compile Include="systems\tests\test_rawdata.py" />
+    <Compile Include="systems\__init__.py" />
+    <Compile Include="tests\test_static.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data" />
+    <Folder Include="examples" />
+    <Folder Include="examples\introduction" />
+    <Folder Include="private" />
+    <Folder Include="sysbrokers" />
+    <Folder Include="sysbrokers\IB" />
+    <Folder Include="syscore" />
+    <Folder Include="syscore\tests" />
+    <Folder Include="sysdata" />
+    <Folder Include="sysdata\arctic" />
+    <Folder Include="sysdata\csv" />
+    <Folder Include="sysdata\futures" />
+    <Folder Include="sysdata\fx" />
+    <Folder Include="sysdata\mongodb" />
+    <Folder Include="sysdata\quandl" />
+    <Folder Include="sysdata\tests" />
+    <Folder Include="sysinit" />
+    <Folder Include="sysinit\configtools" />
+    <Folder Include="sysinit\futures" />
+    <Folder Include="sysinit\futures\csv_data_readers" />
+    <Folder Include="syslogdiag" />
+    <Folder Include="sysprices" />
+    <Folder Include="sysprices\futures" />
+    <Folder Include="sysprices\provided" />
+    <Folder Include="syssims" />
+    <Folder Include="systems" />
+    <Folder Include="systems\futures" />
+    <Folder Include="systems\provided" />
+    <Folder Include="systems\provided\example" />
+    <Folder Include="systems\provided\futures_chapter15" />
+    <Folder Include="systems\provided\moretradingrules" />
+    <Folder Include="systems\provided\simplersystem" />
+    <Folder Include="systems\provided\uncertainty" />
+    <Folder Include="systems\tests" />
+    <Folder Include="tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|Anaconda3_64" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

@@ -1,5 +1,7 @@
 import os
 import sys
+import matplotlib
+
 import matplotlib.pylab as plt
 from PIL import Image
 from functools import partial

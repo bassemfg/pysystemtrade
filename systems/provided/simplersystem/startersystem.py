@@ -21,6 +21,9 @@ from copy import copy
 import numpy as np
 import pandas as pd
 from random import getrandbits
+import matplotlib
+
+
 import matplotlib.pylab as plt
 
 def randomrule(price):

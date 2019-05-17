@@ -13,6 +13,9 @@ from systems.provided.futures_chapter15.rules import carry2
 from sysdata.configdata import Config
 from sysdata.csv.csv_sim_futures_data import csvFuturesSimData
 from systems.tests.testdata import get_test_object
+import matplotlib
+
+
 import matplotlib.pyplot as plt
 
 
